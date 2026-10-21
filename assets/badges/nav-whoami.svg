@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155 44" width="155" height="44" role="img" aria-labelledby="title desc" font-family="'JetBrains Mono','Fira Code','Cascadia Code','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace">
+<title id="title">~/whoami</title>
+<desc id="desc">Go to the whoami page</desc>
+<defs><clipPath id="k"><rect x="1" y="1" width="153" height="42" rx="8"/></clipPath></defs><g clip-path="url(#k)"><rect x="1" y="1" width="153" height="42" fill="#0b1016"/><rect x="1" y="1" width="44" height="42" fill="#ff2bd6" fill-opacity=".16"/><rect x="45" y="1" width="1" height="42" fill="#ff2bd6" fill-opacity=".45"/><rect x="1" y="40" width="153" height="3" fill="#ff2bd6" fill-opacity=".55"/></g><path d="M15 14 L23 22 L15 30" fill="none" stroke="#ff2bd6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="26" y="28" width="8" height="2.6" rx="1" fill="#ff2bd6"/><rect x="1" y="1" width="153" height="42" rx="8" fill="none" stroke="#ff2bd6" stroke-width="1.5"/><text x="58" y="28" font-size="16" font-weight="700" textLength="76.8" fill="#d7f9ff">~/whoami</text>
+</svg>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 28" width="130" height="28" role="img" aria-labelledby="title desc" font-family="'JetBrains Mono','Fira Code','Cascadia Code','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace">
+<title id="title">series: 1 / 3</title>
+<desc id="desc">Status badge: series 1 / 3</desc>
+<defs><clipPath id="k"><rect x=".75" y=".75" width="128.5" height="26.5" rx="5"/></clipPath></defs><g clip-path="url(#k)"><rect width="130" height="28" fill="#0b1016"/><rect x="69" width="61" height="28" fill="#00f0ff"/></g><rect x=".75" y=".75" width="128.5" height="26.5" rx="5" fill="none" stroke="#00f0ff" stroke-opacity=".85" stroke-width="1.2"/><text x="12" y="18.5" font-size="13" textLength="46.8" fill="#6b8798">series</text><text x="79" y="18.5" font-size="13" font-weight="700" textLength="39.0" fill="#0b1016">1 / 3</text>
+</svg>

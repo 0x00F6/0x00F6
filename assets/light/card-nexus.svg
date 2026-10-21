@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" width="600" height="440" role="img" aria-labelledby="title desc" font-family="'JetBrains Mono','Fira Code','Cascadia Code','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace">
+<title id="title">eBPF Network Nexus — packet inspector</title>
+<desc id="desc">Illustration of the eBPF Network Nexus packet inspector: five TLS, QUIC, HTTPS and DoH flows start as encrypted bytes, a scan sweeps the table once keys are found in memory, and each payload turns into readable HTTP.</desc>
+<style>
+.bg{fill:#f7f9fb} .bar{fill:#e8eef3} .pnl{fill:#eef3f7}
+.fg{fill:#0d1520} .dim{fill:#5b6b7a} .cy{fill:#00728a} .mg{fill:#c0168f}
+.gr{fill:#0f7a3d} .ru{fill:#b8430f} .am{fill:#9a6100} .ink{fill:#ffffff}
+.grid{fill:#dbe5ec} .lnf{fill:#c6d4df}
+.sl{stroke:#c6d4df} .scy{stroke:#00728a} .smg{stroke:#c0168f} .sgr{stroke:#0f7a3d}
+.sru{stroke:#b8430f} .sdim{stroke:#5b6b7a} .sam{stroke:#9a6100}
+@keyframes show{from{opacity:0}to{opacity:1}}
+@keyframes off{from{opacity:1}to{opacity:0}}
+@keyframes blink{0%,49.9%{opacity:1}50%,100%{opacity:0}}
+@keyframes nc0{0%,37.9%{opacity:1}38.0%,94.9%{opacity:0}95%,100%{opacity:1}}@keyframes np0{0%,37.9%{opacity:0}38.0%,94.9%{opacity:1}95%,100%{opacity:0}}@keyframes nc1{0%,42.3%{opacity:1}42.4%,94.9%{opacity:0}95%,100%{opacity:1}}@keyframes np1{0%,42.3%{opacity:0}42.4%,94.9%{opacity:1}95%,100%{opacity:0}}@keyframes nc2{0%,46.699999999999996%{opacity:1}46.8%,94.9%{opacity:0}95%,100%{opacity:1}}@keyframes np2{0%,46.699999999999996%{opacity:0}46.8%,94.9%{opacity:1}95%,100%{opacity:0}}@keyframes nc3{0%,51.1%{opacity:1}51.2%,94.9%{opacity:0}95%,100%{opacity:1}}@keyframes np3{0%,51.1%{opacity:0}51.2%,94.9%{opacity:1}95%,100%{opacity:0}}@keyframes nc4{0%,55.5%{opacity:1}55.6%,94.9%{opacity:0}95%,100%{opacity:1}}@keyframes np4{0%,55.5%{opacity:0}55.6%,94.9%{opacity:1}95%,100%{opacity:0}}@keyframes nscan{0%,33.9%{opacity:0;transform:translateY(0)}34%{opacity:1;transform:translateY(0)}56%{opacity:1;transform:translateY(200px)}56.1%,100%{opacity:0;transform:translateY(200px)}}@keyframes keyc{0%,55.9%{opacity:0}56%,94.9%{opacity:1}95%,100%{opacity:0}}@keyframes crtsweep{from{transform:translateY(-140px)}to{transform:translateY(460px)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs><clipPath id="wclip"><rect x="8" y="8" width="584" height="424" rx="12"/></clipPath><linearGradient id="wborder" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00728a"/><stop offset=".55" stop-color="#c0168f"/><stop offset="1" stop-color="#b8430f"/></linearGradient><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00728a" stop-opacity="0"/><stop offset="1" stop-color="#00728a" stop-opacity=".35"/></linearGradient><pattern id="crtscan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1.2" fill="#0d1520" opacity="0.035"/></pattern><linearGradient id="crtband" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00728a" stop-opacity="0"/><stop offset=".5" stop-color="#00728a" stop-opacity="0.06"/><stop offset="1" stop-color="#00728a" stop-opacity="0"/></linearGradient><radialGradient id="crtvig" cx=".5" cy=".5" r=".8"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.0"/></radialGradient></defs>
+<g clip-path="url(#wclip)"><rect class="bg" x="8" y="8" width="584" height="424"/><rect class="bar" x="8" y="8" width="584" height="34"/><rect class="lnf" x="8" y="41" width="584" height="1"/><circle cx="34" cy="25" r="6.5" fill="#b8430f"/><circle cx="56" cy="25" r="6.5" fill="#9a6100"/><circle cx="78" cy="25" r="6.5" fill="#0f7a3d"/><text x="300" y="30" class="dim" font-size="14" text-anchor="middle" textLength="210.0">nexus :: packet inspector</text>
+<g><text x="24" y="82" class="fg" font-size="26" font-weight="700" textLength="280.8">eBPF Network Nexus</text></g>
+<text x="24" y="106" class="dim" font-size="13" textLength="327.6">observe · extract keys · decrypt · inspect</text>
+<text x="24" y="140" class="dim" font-size="11" font-weight="700" textLength="33.0">PROTO</text>
+<text x="114" y="140" class="dim" font-size="11" font-weight="700" textLength="26.4">FLOW</text>
+<text x="290" y="140" class="dim" font-size="11" font-weight="700" textLength="46.2">PAYLOAD</text>
+<rect class="lnf" x="20" y="148" width="560" height="1"/>
+<rect x="22" y="167" width="76" height="22" rx="4" fill="none" class="scy" stroke-width="1.2"/>
+<text x="60" y="182" class="cy" font-size="12" text-anchor="middle" font-weight="700" textLength="43.2">TLS1.3</text>
+<text x="114" y="182" class="fg" font-size="13" textLength="117.0">10.0.0.7 → :443</text>
+<g opacity="0" style="animation:nc0 9.0s steps(1) infinite"><path d="M292.5 175 v-3 a3.5 3.5 0 0 1 7 0 v3" fill="none" stroke-width="1.8" class="smg"/><rect class="mg" x="290" y="175" width="12" height="9" rx="1.5"/><text x="310" y="182" class="mg" font-size="13" textLength="249.6">17 03 03 00 45 a3 9f 2c 71 0e d4</text></g>
+<g style="animation:np0 9.0s steps(1) infinite"><path d="M292.5 175 v-3 a3.5 3.5 0 0 1 7 0 v-1.5" fill="none" stroke-width="1.8" class="sgr" transform="translate(5 -1)"/><rect class="gr" x="290" y="175" width="12" height="9" rx="1.5"/><text x="310" y="182" class="gr" font-size="13" font-weight="700" textLength="202.8">GET /api/v1/flows HTTP/1.1</text></g>
+<rect class="grid" x="20" y="197" width="560" height="1"/>
+<rect x="22" y="207" width="76" height="22" rx="4" fill="none" class="sam" stroke-width="1.2"/>
+<text x="60" y="222" class="am" font-size="12" text-anchor="middle" font-weight="700" textLength="28.8">QUIC</text>
+<text x="114" y="222" class="fg" font-size="13" textLength="117.0">10.0.0.7 → :443</text>
+<g opacity="0" style="animation:nc1 9.0s steps(1) infinite"><path d="M292.5 215 v-3 a3.5 3.5 0 0 1 7 0 v3" fill="none" stroke-width="1.8" class="smg"/><rect class="mg" x="290" y="215" width="12" height="9" rx="1.5"/><text x="310" y="222" class="mg" font-size="13" textLength="249.6">c3 00 00 00 01 08 f6 7a 1c 22 9b</text></g>
+<g style="animation:np1 9.0s steps(1) infinite"><path d="M292.5 215 v-3 a3.5 3.5 0 0 1 7 0 v-1.5" fill="none" stroke-width="1.8" class="sgr" transform="translate(5 -1)"/><rect class="gr" x="290" y="215" width="12" height="9" rx="1.5"/><text x="310" y="222" class="gr" font-size="13" font-weight="700" textLength="210.6" xml:space="preserve">:method GET  :path /metrics</text></g>
+<rect class="grid" x="20" y="237" width="560" height="1"/>
+<rect x="22" y="247" width="76" height="22" rx="4" fill="none" class="smg" stroke-width="1.2"/>
+<text x="60" y="262" class="mg" font-size="12" text-anchor="middle" font-weight="700" textLength="36.0">HTTPS</text>
+<text x="114" y="262" class="fg" font-size="13" textLength="117.0">10.0.0.9 → :443</text>
+<g opacity="0" style="animation:nc2 9.0s steps(1) infinite"><path d="M292.5 255 v-3 a3.5 3.5 0 0 1 7 0 v3" fill="none" stroke-width="1.8" class="smg"/><rect class="mg" x="290" y="255" width="12" height="9" rx="1.5"/><text x="310" y="262" class="mg" font-size="13" textLength="249.6">17 03 03 01 1a 5e c0 4d 88 2f 61</text></g>
+<g style="animation:np2 9.0s steps(1) infinite"><path d="M292.5 255 v-3 a3.5 3.5 0 0 1 7 0 v-1.5" fill="none" stroke-width="1.8" class="sgr" transform="translate(5 -1)"/><rect class="gr" x="290" y="255" width="12" height="9" rx="1.5"/><text x="310" y="262" class="gr" font-size="13" font-weight="700" textLength="218.4" xml:space="preserve">HTTP/2 200  application/json</text></g>
+<rect class="grid" x="20" y="277" width="560" height="1"/>
+<rect x="22" y="287" width="76" height="22" rx="4" fill="none" class="sgr" stroke-width="1.2"/>
+<text x="60" y="302" class="gr" font-size="12" text-anchor="middle" font-weight="700" textLength="43.2">TLS1.2</text>
+<text x="114" y="302" class="fg" font-size="13" textLength="124.8">10.0.0.9 → :8443</text>
+<g opacity="0" style="animation:nc3 9.0s steps(1) infinite"><path d="M292.5 295 v-3 a3.5 3.5 0 0 1 7 0 v3" fill="none" stroke-width="1.8" class="smg"/><rect class="mg" x="290" y="295" width="12" height="9" rx="1.5"/><text x="310" y="302" class="mg" font-size="13" textLength="249.6">17 03 03 00 9c 3e 77 d1 05 c8 aa</text></g>
+<g style="animation:np3 9.0s steps(1) infinite"><path d="M292.5 295 v-3 a3.5 3.5 0 0 1 7 0 v-1.5" fill="none" stroke-width="1.8" class="sgr" transform="translate(5 -1)"/><rect class="gr" x="290" y="295" width="12" height="9" rx="1.5"/><text x="310" y="302" class="gr" font-size="13" font-weight="700" textLength="195.0" xml:space="preserve">POST /ingest  gzip → json</text></g>
+<rect class="grid" x="20" y="317" width="560" height="1"/>
+<rect x="22" y="327" width="76" height="22" rx="4" fill="none" class="sru" stroke-width="1.2"/>
+<text x="60" y="342" class="ru" font-size="12" text-anchor="middle" font-weight="700" textLength="21.6">DoH</text>
+<text x="114" y="342" class="fg" font-size="13" textLength="117.0">10.0.0.7 → :443</text>
+<g opacity="0" style="animation:nc4 9.0s steps(1) infinite"><path d="M292.5 335 v-3 a3.5 3.5 0 0 1 7 0 v3" fill="none" stroke-width="1.8" class="smg"/><rect class="mg" x="290" y="335" width="12" height="9" rx="1.5"/><text x="310" y="342" class="mg" font-size="13" textLength="249.6">17 03 03 00 61 8b 2e 90 14 c7 3a</text></g>
+<g style="animation:np4 9.0s steps(1) infinite"><path d="M292.5 335 v-3 a3.5 3.5 0 0 1 7 0 v-1.5" fill="none" stroke-width="1.8" class="sgr" transform="translate(5 -1)"/><rect class="gr" x="290" y="335" width="12" height="9" rx="1.5"/><text x="310" y="342" class="gr" font-size="13" font-weight="700" textLength="187.2">GET /dns-query?dns=AAAB…</text></g>
+<g style="animation:nscan 9.0s linear infinite"><rect x="20" y="132" width="560" height="22" fill="url(#sg)"/><rect class="cy" x="20" y="153" width="560" height="1.5"/></g>
+<rect class="lnf" x="20" y="370" width="560" height="1"/>
+<g style="animation:blink 1.8s steps(1) infinite"><text x="24" y="404" class="gr" font-size="13">●</text></g>
+<text x="40" y="404" class="gr" font-size="13" font-weight="700" textLength="31.2">live</text>
+<text x="88" y="404" class="dim" font-size="13" textLength="54.6">memscan</text>
+<g opacity="0" style="animation:keyc 9.0s steps(1) infinite"><text x="160" y="404" class="cy" font-size="13" font-weight="700" textLength="202.8">5 keys · 5 flows decrypted</text></g>
+<text x="576" y="404" class="dim" font-size="13" text-anchor="end" textLength="109.2">localhost:8080</text><rect x="0" y="0" width="600" height="440" fill="url(#crtscan)"/></g>
+<rect x="8" y="8" width="584" height="424" rx="12" fill="none" stroke="url(#wborder)" stroke-width="2"/>
+</svg>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 28" width="185" height="28" role="img" aria-labelledby="title desc" font-family="'JetBrains Mono','Fira Code','Cascadia Code','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace">
+<title id="title">engine: experimental</title>
+<desc id="desc">Status badge: engine experimental</desc>
+<defs><clipPath id="k"><rect x=".75" y=".75" width="183.5" height="26.5" rx="5"/></clipPath></defs><g clip-path="url(#k)"><rect width="185" height="28" fill="#0b1016"/><rect x="69" width="116" height="28" fill="#ffb627"/></g><rect x=".75" y=".75" width="183.5" height="26.5" rx="5" fill="none" stroke="#ffb627" stroke-opacity=".85" stroke-width="1.2"/><text x="12" y="18.5" font-size="13" textLength="46.8" fill="#6b8798">engine</text><text x="79" y="18.5" font-size="13" font-weight="700" textLength="93.6" fill="#0b1016">experimental</text>
+</svg>
